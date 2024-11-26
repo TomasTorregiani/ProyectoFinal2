@@ -1,0 +1,21 @@
+
+.actividad-item {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 20px;
+}
+
+.actividad-item:nth-child(odd) {
+    flex-direction: row; 
+}
+
+.actividad-item:nth-child(even) {
+    flex-direction: row-reverse; 
+}
+
+.actividad-item p{
+    color: red;
+    font-size: 15px;
+}
+
+

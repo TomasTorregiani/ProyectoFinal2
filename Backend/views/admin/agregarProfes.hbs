@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <h4>Agregar un nuevo profe al staff</h4>
+            <form action="/admin/profes/agregarProfes" method="post">
+                <div class="row">
+                    <input type="text" placeholder="Nombre" name="Nombre">
+                </div>
+                <div class="row">
+                    <textarea type="text" name="Apellido" placeholder="Apellido"></textarea>
+                </div>
+                <div class="row">
+                    <textarea type="text" name="Mail" placeholder="Mail"></textarea>
+                </div>
+                <div class="row">
+                    <textarea type="text" name="img" placeholder="Img"></textarea>
+                </div>
+                <button type="submit">Guardar</button>
+            </form>
+            {{#if error}}
+                <p>{{message}}</p>
+            {{/if}}
+        </div>
+    </div>
+</div>

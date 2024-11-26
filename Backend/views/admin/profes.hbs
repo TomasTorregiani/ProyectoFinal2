@@ -1,0 +1,28 @@
+<div>
+    <h1 style="text-align: center; margin: 60px">Staff de flowing</h1>
+    <div class="container">
+        <div class="row">
+            {{#each profes}}
+                <div class="col-6" style="padding: 50px">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{this.img}}" class="card-img-top" width="250px" height="200px" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">{{this.Nombre}}</p>
+                        </div>
+                        <a href="/admin/profes/eliminarProfe/{{this.id}}">Eliminar profe del staff</a>
+                    </div>
+                </div>
+            {{/each}}
+                    <div class="col-6" style="padding: 50px">
+                        <a href="/admin/profes/agregarProfes">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" class="card-img-top" width="250px" height="200px" alt="...">
+                            <div class="card-body">
+                            <p class="card-text">Agregar nuevo profe al staff</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>

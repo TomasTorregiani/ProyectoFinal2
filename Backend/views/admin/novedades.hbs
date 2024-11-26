@@ -1,0 +1,51 @@
+<div class="container">
+        <nav class="row" style="background-color: rgb(255, 232, 232);">
+            <a class="col-md-3" href="">Novedades</a>
+            <a class="col-md-3" href="/admin/profes">Profes</a>
+            <a class="col-md-3" href="/admin/actividades">Actividades</a>
+            <a class="col-md-3" href="/admin/products">Productos</a>
+        </nav>
+    {{!Fila 1}}
+    <div class="row divNovedades">
+        <p class="col-md-3" style="font-size: 25px;">Hola {{persona}}</p>
+        <a class="col-md-6" href="/admin/login/logout">Cerrar sesion</a>
+    </div>
+    {{!Fila 2}}
+    <div class="row">
+        <div class="col-7">
+            <h3>Listado de novedades</h3>
+        </div>
+        <div class="col-5">
+            <a href="/admin/novedades/agregar">Agregar Nueva Novedad</a>
+        </div>
+    </div>
+    {{!Fila 3}}
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">titulo</th>
+                        <th scope="col">Img</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each novedades}}
+                    <tr>
+                        <th scope="row">{{id}}</th>
+                        <td>{{titulo}}</td>
+                        <td>{{{imagen}}}</td>
+                        <td>
+                            <a href="/admin/novedades/modificar/{{id}}">Modificar</a>
+                            <a href="/admin/novedades/eliminar/{{id}}">Eliminar</a>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
