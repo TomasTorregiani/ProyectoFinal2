@@ -30,9 +30,15 @@ router.get('/novedades', async (req, res, next) => {
 })
 
 router.get('/profes', async (req, res, next) => {
-    var profes = await profesModel.getProfes()
-    res.json(profes)
-})
+    try {
+        var profes = await profesModel.getProfes();
+        res.json(profes);
+    } catch (error) {
+        console.error('Error en /profes:', error);
+        res.status(500).json({ error: 'Hubo un problema al obtener los datos' });
+    }
+});
+
 
 router.get('/actividades', async (req, res, next) => {
     var actividades = await actividadesModel.getActividades()
