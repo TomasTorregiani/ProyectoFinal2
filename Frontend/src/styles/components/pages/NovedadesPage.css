@@ -1,0 +1,7 @@
+th{
+    border-bottom: 1px solid black;
+}
+th, td {
+    vertical-align: middle;
+    text-align: center; 
+}

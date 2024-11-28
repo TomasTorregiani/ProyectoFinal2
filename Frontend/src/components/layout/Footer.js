@@ -1,10 +1,10 @@
 import React from "react";
 import "../../styles/components/layout/Footer.css"
 
-const Footer = ( props ) => {
+const Footer = () => {
     return (
-        <footer>
-            <p>Derechos reservados. Transportes X</p>
+        <footer id="footer">
+            <img src="/logos/logo4.jpg" />
         </footer>
     )
 }

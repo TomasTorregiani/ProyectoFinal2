@@ -10,4 +10,5 @@
 .divNovedades{
     display: flex !important;
     color: red;
+    justify-content: space-between;
 }

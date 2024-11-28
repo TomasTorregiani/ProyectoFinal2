@@ -29,3 +29,10 @@
     font-size: 10px;
     text-align: center;
 }
+.homeimg{
+    display: flex;
+    justify-content: center;
+}
+.homeimg img{
+    width: 75%;
+}
