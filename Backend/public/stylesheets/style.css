@@ -9,6 +9,19 @@
 }
 .divNovedades{
     display: flex !important;
-    color: red;
-    justify-content: space-between;
+    justify-content: flex-end;
+    margin: 50px;
+}
+#loginDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+#loginDiv p{
+    font-size: 25px;
+    margin: 30px;
+}
+#novedadesDiv a{
+    background-color: rgb(255, 141, 141);
+    color: black;
 }

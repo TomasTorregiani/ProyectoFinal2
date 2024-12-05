@@ -1,9 +1,6 @@
-.contacto{
-    display: flex;
-    gap:24px
-}
-.contacto div{
-    width: 100%;
+#contactoDiv h2{
+    text-align: center;
+    margin: 50px;
 }
 .datos p{
     font-size: 14px;
@@ -12,9 +9,13 @@
     font-size: 13px;
 }
 .formulario p{ 
+    padding: 0 300px;
+    gap: 20px;
     display: flex;
 }
 .formulario p label{
+
+    font-size: 15px;
     min-width: 80px;
     display: flex;
     align-items: center;
