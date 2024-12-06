@@ -4,6 +4,13 @@
     justify-content: flex-start;
     align-items: center;
 }
+header nav a{
+    text-decoration: none;
+    color: black;
+}
+header nav a:hover{
+    background-color: rgb(255, 141, 141);
+}
 .header-img{
     width: 200px;
 }
@@ -24,4 +31,40 @@
 #novedadesDiv a{
     background-color: rgb(255, 141, 141);
     color: black;
+    text-decoration: none;
+}
+#profesDiv a{
+    text-decoration: none;
+}
+#productosDiv{
+    display: flex;
+    margin: 50px;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+#productosDiv .prod{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid black;
+    width: 20%;
+    background-color: rgb(217, 217, 217)
+}
+#productosDiv .prod h1{
+    font-size: 22px;
+}
+#productosDiv .prod img{
+    height: 220px;
+    width: 250px;
+}
+#actividadesDiv{
+    display: flex;
+    justify-content: space-around;
+}
+.eachDiv{
+    background-color: blanchedalmond;
+    box-shadow: 1px 1px 1px 1px rgb(111, 98, 79);
 }

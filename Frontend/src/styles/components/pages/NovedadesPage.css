@@ -1,7 +1,10 @@
 th{
-    border-bottom: 1px solid black;
+    border-bottom: 3px solid black;
 }
 th, td {
     vertical-align: middle;
     text-align: center; 
+}
+td{
+    border-bottom: 1px black dotted;    
 }

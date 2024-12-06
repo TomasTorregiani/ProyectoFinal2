@@ -9,12 +9,15 @@ import NovedadesPage from "./pages/NovedadesPage"
 import ContactoPage from "./pages/contactoPage"
 import { ActividadesPage } from './pages/ActividadesPage';
 import { ProductosPage } from './pages/ProductosPage';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
     <div className="App">
       <Header/>
       <BrowserRouter>
+        <ToastContainer />
         <Nav/>
         <Routes>
           <Route path='/' element={<HomePage/>}></Route>

@@ -1,5 +1,13 @@
-<h4>Actividades</h4>
-{{#each actividades}}
-    <h4>Clase: {{this.clase}}</h4>
-    <p>Precio: ${{this.costo}}</p>
-{{/each}}
+<main>
+    <div>
+        <h4 style="text-align: center; margin: 50px">Actividades</h4>
+    </div>
+    <div id="actividadesDiv">
+        {{#each actividades}}
+        <div class="eachDiv">
+            <h4>Clase: {{this.clase}}</h4>
+            <p>Precio: ${{this.costo}}</p>
+        </div>
+        {{/each}}
+    </div>
+</main>

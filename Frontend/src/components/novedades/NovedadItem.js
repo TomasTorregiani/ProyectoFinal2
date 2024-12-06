@@ -24,9 +24,20 @@ const NovedadItem = (props) => {
                 </td>
                 <td><button onClick={handleDisplay}>Ver novedad</button></td>
             </tr>
-            <div>
-                {display === false ? '' : <p style={{color:"blue", fontSize:"20px"}}>{body}</p>}
-            </div>
+            <tr>
+                <td colSpan={5}>
+                    <div
+                        style={{
+                            height: display ? "auto" : "0",
+                            overflow: "hidden",
+                            transition: "height 0.3s ease, opacity 0.3s ease",
+                            opacity: display ? 1 : 0,
+                        }}
+                    >
+                        <p style={{color:"rgb(0, 0, 110)", fontSize: "15px", margin: 0 }}>{body}</p>
+                    </div>
+                </td>
+            </tr>
         </>
     )
 }

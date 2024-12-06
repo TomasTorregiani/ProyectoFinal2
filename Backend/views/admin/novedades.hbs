@@ -3,7 +3,7 @@
     {{!Fila 1}}
     <div class="row divNovedades">
         <p class="col-md-3" style="font-size: 25px;">Bienvenido {{persona}}!</p>
-        <a class="col-md-2" href="/admin/login/logout">Cerrar sesion</a>
+        <a class="col-md-2" href="/admin/login/logout" style="background-color: rgb(255, 229, 229); height: 40px; width: 150px">Cerrar sesion 🔒</a>
     </div>
     {{!Fila 2}}
     <div class="row">
@@ -11,7 +11,7 @@
             <h3>Listado de novedades</h3>
         </div>
         <div class="col-5">
-            <a href="/admin/novedades/agregar">Agregar Nueva Novedad</a>
+            <a style="font-size: 20px; background-color: rgb(206, 255, 206)" href="/admin/novedades/agregar">  Agregar Nueva Novedad ➕</a>
         </div>
     </div>
     {{!Fila 3}}
@@ -33,8 +33,8 @@
                         <td>{{titulo}}</td>
                         <td>{{{imagen}}}</td>
                         <td>
-                            <a href="/admin/novedades/modificar/{{id}}">Modificar</a>
-                            <a href="/admin/novedades/eliminar/{{id}}">Eliminar</a>
+                            <a href="/admin/novedades/modificar/{{id}}" style="background-color: rgb(211, 211, 255);">Modificar ✏️</a>
+                            <a href="/admin/novedades/eliminar/{{id}}" style="background-color: rgb(255, 156, 156);" >Eliminar ❌ </a>
                         </td>
                     </tr>
                     {{/each}}

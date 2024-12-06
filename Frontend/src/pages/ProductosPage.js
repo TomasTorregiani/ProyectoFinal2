@@ -33,9 +33,9 @@ export const ProductosPage = () => {
     }
 
     return (
-        <main>
+        <main style={{display:"flex"}}>
             <aside>
-                <div>
+                <div style={{margin:"50px"}}>
                 <form className="d-flex" role="search" >
                     <input
                         className="form-control me-2"
@@ -47,7 +47,7 @@ export const ProductosPage = () => {
                     </form>
                 </div>
             </aside>
-            <div style={{display:"flex", justifyContent:"space-around", flexWrap:"wrap"}}>
+            <div style={{display:"flex", justifyContent:"space-around", flexWrap:"wrap", gap:"150px", padding:"50px"}}>
                 {
                     loading ?   (
                                     <p>Cargando...</p>

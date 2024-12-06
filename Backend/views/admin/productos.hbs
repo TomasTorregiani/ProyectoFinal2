@@ -1,8 +1,14 @@
+<main>
+    <p style="text-align: center; font-size: 30px;margin: 50px">Productos</p>
+    <div id="productosDiv">
+        {{#each products}}
+            <div class="prod">
+                <h1>Producto: {{this.producto}}</h1>
+                <p>Precio: ${{this.precio}}</p>
+                <img src="{{this.img}}" alt="{{this.producto}}">
+                <p>Stock: {{this.stock}}</p>
+            </div>
+        {{/each}}
+    </div>
+</main>
 
-
-{{#each products}}
-    <h1>Producto: {{this.producto}}</h1>
-    <p>Precio: ${{this.precio}}</p>
-    <p>Stock: {{this.stock}}</p>
-    <img src="{{this.img}}" alt="{{this.producto}}">
-{{/each}}
